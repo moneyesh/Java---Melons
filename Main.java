@@ -2,8 +2,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		System.out.println("Instantiate objects here!");
-
-		MelonType musk = new MelonType(
+		MelonType muskmelon = new MelonType(
 			"musk",
 			"Muskmelon",
 			1998,
@@ -39,8 +38,8 @@ public class Main {
 		false, 
 		true
 		);
-
-		MelonType[] melonTypes = {musk, casaba,crenshaw, yellowWatermelon};
+	
+		MelonType[] melonTypes = {muskmelon, casaba,crenshaw, yellowWatermelon};
 
 		Melon melon1 = new Melon(
 			melonTypes[3],
@@ -71,12 +70,14 @@ public class Main {
 			9, 
 			35, 
 			"Michael");
+
 		Melon melon5 = new Melon(
 			melonTypes[2],
 			8, 
 			2, 
 			35, 
 			"Michael");
+		
 		Melon melon6 = new Melon(
 			melonTypes[0],
 			6, 
@@ -90,21 +91,29 @@ public class Main {
 			10, 
 			3, 
 			"Sheila");
+	
 
+		Melon[] melons = {melon1, melon2, melon3, melon4, melon5, melon6, melon7};
+		getSellabilityReport(melons);
+	
+}
+	
+		public static void getSellabilityReport(Melon[] melons){
+			for(Melon melon : melons){
+				String sellable;
+				
+				if(melon.isSellable()){
+					sellable = "CAN BE SOLD";
+				} else { 
+					sellable = "NOT SELLABLE";
+				}
 
-		// public static void getSellabilityReport(Melon[] melons){
-		// 	if(isSellable == true){
-		// 		System.out.println("Can be sold");
-		// 	}
-		// 	else(){
-		// 		System.out.println("Not Sellable");
-		// 	}
+			System.out.println("Harvested by " + melon.harvester + "from field" + melon.field + "(" + sellable + ")");
+		
+			}
+	
+}
 
-
-		// 	System.out.println(Melon.harvester + Melon.field +);
-		// }
-
-	}
 }
 
 

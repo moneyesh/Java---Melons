@@ -23,12 +23,9 @@ public class Melon {
 	}
 
 
-	public boolean isSellable(int shapeRating, int colorRating, int field){
-		this.shapeRating = shapeRating;
-		this.colorRating = colorRating;
-		this.field = field;
+	public boolean isSellable(){
 
-		if(field != 3 && colorRating > 5 && shapeRating > 5){
+		if(this.field != 3 && this.colorRating > 5 && this.shapeRating > 5){
 				return true;	
 			}
 		else {
