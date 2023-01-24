@@ -91,18 +91,18 @@ public class Main {
 			3, 
 			"Sheila");
 
-		Melon[] melons = 
-		public static void getSellabilityReport(Melon[] melons){
-			if(isSellable == true){
-				System.out.println("Can be sold");
-			}
-			else(){
-				System.out.println("Not Sellable");
-			}
+
+		// public static void getSellabilityReport(Melon[] melons){
+		// 	if(isSellable == true){
+		// 		System.out.println("Can be sold");
+		// 	}
+		// 	else(){
+		// 		System.out.println("Not Sellable");
+		// 	}
 
 
-			System.out.println(Melon.harvester + Melon.field +);
-		}
+		// 	System.out.println(Melon.harvester + Melon.field +);
+		// }
 
 	}
 }
